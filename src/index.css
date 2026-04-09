@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Lato", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Infant", ui-serif, Georgia, serif;
+
+  --color-forest: #1b3022;
+  --color-sage: #8a9a5b;
+  --color-earth: #4a3728;
+  --color-cream: #f5f2ed;
+  --color-warm-yellow: #fdfd96;
+  --color-coffee: #3e2723;
+}
+
+@layer base {
+  body {
+    @apply bg-cream text-coffee font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.fairytale-glow {
+  text-shadow: 0 0 10px rgba(253, 253, 150, 0.5);
+}
+
+.garden-overlay {
+  background: linear-gradient(to bottom, rgba(27, 48, 34, 0.4), rgba(27, 48, 34, 0.8));
+}
